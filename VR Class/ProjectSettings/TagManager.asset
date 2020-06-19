@@ -9,6 +9,7 @@ TagManager:
   - TeleportIgnore
   - ExcludeTeleport
   - Floor
+  - Door
   layers:
   - Default
   - TransparentFX

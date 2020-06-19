@@ -40,6 +40,10 @@
         private void ControllerStartTouchInteractableObject(object o, ObjectInteractEventArgs e)
         {
             OnControllerStartTouchInteractableObject.Invoke(o, e);
+            if (e.target.name == "TestCube")
+            {
+                e.target.transform.Translate(0, 0, 3);
+            }
         }
 
         private void ControllerTouchInteractableObject(object o, ObjectInteractEventArgs e)
